@@ -1,0 +1,27 @@
+<settings>
+  <servers>
+     <server>
+       <id>plazmix-gitlab-api-112</id>
+       <configuration>
+         <httpHeaders>
+           <property>
+             <name>Job-Token</name>
+             <value>${env.CI_JOB_TOKEN}</value>
+           </property>
+         </httpHeaders>
+       </configuration>
+     </server>
+     <server>
+       <id>plazmix-gitlab-core</id>
+       <configuration>
+         <httpHeaders>
+           <property>
+             <name>Job-Token</name>
+             <value>${env.CI_JOB_TOKEN}</value>
+           </property>
+         </httpHeaders>
+       </configuration>
+     </server>
+   </servers>
+ </settings>
+
